@@ -12,5 +12,5 @@ try {
 } catch (Exception $e) {
   echo "Caught Exception: " . $e->getMessage();
 } finally {
-  echo 'FIrst Finally'
+  echo 'FIrst Finally';
 }

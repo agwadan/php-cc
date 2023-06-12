@@ -15,7 +15,10 @@
 <?php
 
 if (isset($_POST['submit'])) {
-  echo $_POST['name'];
-  echo $_POST['password'];
+  $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+  $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_SPECIAL_CHARS);
+
+  echo $name . "<br/><br/>";
+  echo $password;
 }
 ?>
